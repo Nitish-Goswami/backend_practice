@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <h1>This is Census Management</h1>
+    <form action="/vote" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" id="name"> 
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" value="Male">Male
+            <input type="radio" name="gender" id="gender" value="Female">Female
+        </div>
+        
+        <div>
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+       
+       <div>
+            <label for="isVaccinated">Vaccinated</label>
+            <input type="radio" name="isVaccinated" id="isVaccinated" value=1>Yes
+            <input type="radio" name="isVaccinated" id="isVaccinated" value=0>No
+       </div>
+    
+        <input type="submit" value="Vote">
+    </form>
+</body>
+</html>
